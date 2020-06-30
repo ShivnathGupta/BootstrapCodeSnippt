@@ -1,0 +1,41 @@
+<div class="row mr-3 ml-3 mt-3">
+<div class="row mr-3 ml-3 mt-3" id="content">
+        <div class="col-3">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                    aria-controls="v-pills-home" aria-selected="true">Home</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                    aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                    aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                    aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                    aria-labelledby="v-pills-home-tab">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                    corporis soluta facilis commodi, natus quisquam ex neque maiores
+                    culpa quidem eos sit dolorem consectetur consequuntur tempore
+                    dignissimos autem, alias ut! Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quasi asperiores quae beatae excepturi. Ex impedit
+                    rem ipsa dolores, earum doloremque voluptate consequuntur aspernatur
+                    omnis, numquam repellat totam nihil enim? Ut! Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Illum corporis soluta facilis
+                    commodi, natus quisquam ex neque maiores culpa quidem eos sit d
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    ...
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    ...
+                </div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    ...
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>

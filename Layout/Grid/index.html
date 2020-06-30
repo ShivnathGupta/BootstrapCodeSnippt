@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="../assets/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="../assets/css/bootstrap-reboot.css" rel="stylesheet" />
+    <style>
+      .container-fluid > .row > [class^="col"] {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        background-color: rgba(86, 61, 124, 0.15);
+        border: 1px solid rgba(86, 61, 124, 0.2);
+      }
+      .container > .row > [class^="col"] {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        background-color: rgba(86, 61, 124, 0.15);
+        border: 1px solid rgba(86, 61, 124, 0.2);
+      }
+      [class^="container"] > .row > [class^="col"] {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        background-color: rgba(86, 61, 124, 0.15);
+        border: 1px solid rgba(86, 61, 124, 0.2);
+      }
+      .box {
+        width: 100%;
+        height: 200px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm">
+          container-fluid with Stacked to horizontal
+        </div>
+        <div class="col-sm">
+          container-fluid with Stacked to horizontal
+        </div>
+        <div class="col-sm">
+          container-fluid with Stacked to horizontal
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          container
+        </div>
+        <div class="col">
+          container
+        </div>
+        <div class="col">
+          container
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container-sm">
+      <div class="row">
+        <div class="col-sm">
+          container-sm----sm,md,lg,xl is breakpoint when minimize the window and
+          display with 100%
+        </div>
+        <div class="col-sm">
+          container-sm----sm,md,lg,xl is breakpoint when minimize the window and
+          display with 100%
+        </div>
+        <div class="col-sm">
+          container-sm----sm,md,lg,xl is breakpoint when minimize the window and
+          display with 100%
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container-md">
+      <div class="row">
+        <div class="col-md">
+          container-md
+        </div>
+        <div class="col-md">
+          container-md
+        </div>
+        <div class="col-md">
+          container-md
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-lg">
+          container-lg
+        </div>
+        <div class="col-lg">
+          container-lg
+        </div>
+        <div class="col-lg">
+          container-lg
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-xl">
+          container-xl
+        </div>
+        <div class="col-xl">
+          container-xl
+        </div>
+        <div class="col-xl">
+          container-xl
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <div class="container">
+      <div class="row">
+        <div class="col">Equal Width</div>
+        <div class="col">Equal Width</div>
+      </div>
+      <div class="row">
+        <div class="col">Equal Width</div>
+        <div class="col">Equal Width</div>
+        <div class="col">Equal Width</div>
+      </div>
+      <div class="row">
+        <div class="col">Equal Width</div>
+        <div class="col">Equal Width</div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="container">
+      <div class="row">
+        <div class="col">Equal-width multi-line</div>
+        <div class="col">Equal-width multi-line</div>
+        <div class="w-100"></div>
+        <div class="col">Equal-width multi-line</div>
+        <div class="col">Equal-width multi-line</div>
+        <div class="w-100"></div>
+        <div class="col">Equal-width multi-line</div>
+        <div class="col">Equal-width multi-line</div>
+        <div class="w-100"></div>
+        <div class="col">Equal-width multi-line</div>
+        <div class="col">Equal-width multi-line</div>
+        <div class="w-100"></div>
+        <div class="col">Equal-width multi-line</div>
+        <div class="col">Equal-width multi-line</div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="container">
+      <div class="row row-cols-2">
+        <div class="col">Equal-width Row Columns</div>
+        <div class="col">Equal-width Row Columns</div>
+        <div class="col">Equal-width Row Columns</div>
+        <div class="col">Equal-width Row Columns</div>
+        <div class="col">Equal-width Row Columns</div>
+        <div class="col">Equal-width Row Columns</div>
+        <div class="col">Equal-width Row Columns</div>
+        <div class="col">Equal-width Row Columns</div>
+        <div class="col">Equal-width Row Columns</div>
+        <div class="col">Equal-width Row Columns</div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6">
+        <div class="col">Equal-width Row Columns with Specify breakpoint</div>
+        <div class="col">Equal-width Row Columns with Specify breakpoint</div>
+        <div class="col">Equal-width Row Columns with Specify breakpoint</div>
+        <div class="col">Equal-width Row Columns with Specify breakpoint</div>
+        <div class="col">Equal-width Row Columns with Specify breakpoint</div>
+        <div class="col">Equal-width Row Columns with Specify breakpoint</div>
+        <div class="col">Equal-width Row Columns with Specify breakpoint</div>
+        <div class="col">Equal-width Row Columns with Specify breakpoint</div>
+        <div class="col">Equal-width Row Columns with Specify breakpoint</div>
+        <div class="col">Equal-width Row Columns with Specify breakpoint</div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="container">
+      <div class="row">
+        <div class="col-3">Setting one column width</div>
+        <div class="col">Setting one column width</div>
+        <div class="col">Setting one column width</div>
+      </div>
+      <div class="row">
+        <div class="col">Setting one column width</div>
+        <div class="col-3">Setting one column width</div>
+        <div class="col">Setting one column width</div>
+      </div>
+      <div class="row">
+        <div class="col">Setting one column width</div>
+        <div class="col">Setting one column width</div>
+        <div class="col-3">Setting one column width</div>
+      </div>
+    </div>
+    <br />
+
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-2">
+          1 of 3
+        </div>
+        <div class="col-md-auto">
+          Variable width contentdgfidsgfiuusdgfidsgf disgfisg dfsdf dsbfdsbf
+        </div>
+        <div class="col col-lg-2">
+          3 of 3
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          1 of 3
+        </div>
+        <div class="col-md-auto">
+          Variable width content
+        </div>
+        <div class="col col-lg-2">
+          3 of 3
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="container">
+      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+      <div class="row">
+        <div class="col-md-8">
+          sm,md,lg,xl is breakpoint when minimize the window .col-md-8
+        </div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      </div>
+
+      <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+      <div class="row">
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      </div>
+
+      <!-- Columns are always 50% wide, on mobile and desktop -->
+      <div class="row">
+        <div class="col-6">.col-6</div>
+        <div class="col-6">.col-6</div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="container box">
+      <div class="row justify-content-end">
+        <div class="col-3">
+          Horizontal Alignment <br />
+          justify-content-start
+        </div>
+        <div class="col-2">
+          justify-content-center
+        </div>
+        <div class="col-4">
+          justify-content-end
+          <br />
+          justify-content-around
+          <br />
+          justify-content-between
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container box">
+      <div class="row">
+        <div class="col-2 align-self-start">
+          Vertical Alignment <br />
+          align-self-start
+        </div>
+        <div class="col-2 align-self-center">
+          align-self-center
+        </div>
+        <div class="col-4 align-self-end">
+          align-self-end align-self-end
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="container">
+      <div class="row">
+        <div class="col order-last">
+         First --order-last
+        </div>
+        <div class="col order-first">
+         Second --order-first
+        </div>
+        <div class="col">
+          Third
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="container">
+      <div class="row">
+        <div class="col order-2">
+         First --order-2
+        </div>
+        <div class="col order-1">
+         Second --order-1
+        </div>
+        <div class="col">
+          Third
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

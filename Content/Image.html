@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Image</title>
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="../assets/css/bootstrap-reboot.css" rel="stylesheet" />
+  </head>
+  <body>
+    <img src="Slide3.jpg" class="img-fluid" alt="Responsive image" title="Responsive Image" />
+
+    <img src="Slide3.jpg" alt="Not Responsive image" title="Not Responsive Image" />
+    <br />
+    <br />
+    <br />
+    <img src="Slide3.jpg" alt="..." class="img-thumbnail" title="Thumbnail Image" />
+
+    <img src="Slide3.jpg" class="float-right" alt="float-right/float-left" title="Float Left or Right Image" />
+    <img src="Slide3.jpg" class=" mx-auto d-block" alt="float-right/float-left" title="Display Image in Center using x-axis margin and display Block" />
+
+    <div class="text-center">
+      <img src="Slide3.jpg" alt="Align center" title="Display Image with Text-center property" />
+    </div>
+
+    <picture title="Picture tag">
+        <source media="(min-width:650px)" srcset="Slide1.jpg">
+        <source media="(min-width:465px)" srcset="Slide2.jpg">
+        <img src="Slide3.jpg" class="img-fluid img-thumbnail">
+      </picture>
+  </body>
+</html>

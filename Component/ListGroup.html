@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Group</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/bootstrap-reboot.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+</head>
+<body class="container mt-2">
+    <ul class="list-group">
+        <li class="list-group-item active">Cras justo odio</li>
+        <li class="list-group-item disabled">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+      <br>
+      <br >
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item ">Cras justo odio</li>
+        <li class="list-group-item disabled">Dapibus ac facilisis in</li>
+        <li class="list-group-item active">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+      <br>
+      <br >
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item">Cras justo odio  <span class="badge badge-primary badge-pill">14</span></li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+      </ul>
+      <div class="row">
+        <div class="col-4">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, cum doloremque. Laudantium labore enim veniam quasi repellat tempora aliquid, voluptates officiis voluptatum asperiores saepe alias optio et hic blanditiis! Incidunt!</div>
+            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"> Hello Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid assumenda expedita atque non enim explicabo? Similique dignissimos tempora vero quae? Accusamus deleniti mollitia minus culpa eos! Repellendus rerum doloremque quibusdam.</div>
+            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">How Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nulla sequi dolore alias accusamus. Nostrum aspernatur ipsam, corrupti iusto illo molestiae vel repellendus tempore repellat eveniet fuga quidem voluptatibus impedit.</div>
+            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Are Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil doloremque ducimus rem quod asperiores maiores, dignissimos tenetur magni animi, praesentium voluptas labore. Possimus illum dolorem veritatis suscipit totam sed laborum?</div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

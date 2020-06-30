@@ -1,0 +1,19 @@
+{
+    "sqltools.connections": [
+        {
+            "askForPassword": false,
+            "database": "techhelp",
+            "driver": "MySQL",
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "name": "Connection",
+            "password": "Shiv@2287615",
+            "port": 3306,
+            "previewLimit": 50,
+            "server": "localhost:8081",
+            "username": "root"
+        }
+    ],
+    "liveServer.settings.port": 5501
+}

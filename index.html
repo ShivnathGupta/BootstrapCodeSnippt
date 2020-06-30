@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Structure</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-reboot.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <style>
+        .dropdown-menu {
+            min-width: 200px;
+        }
+
+        .dropdown-menu.columns-2 {
+            min-width: 400px;
+        }
+
+        .dropdown-menu.columns-3 {
+            min-width: 600px;
+        }
+
+        .dropdown-menu li a {
+            padding: 5px 15px;
+            font-weight: 300;
+        }
+
+        .multi-column-dropdown {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .multi-column-dropdown li a {
+            display: block;
+            clear: both;
+            line-height: 1.428571429;
+            color: #333;
+            white-space: normal;
+        }
+
+
+
+        .multi-column-dropdown li a:hover {
+            text-decoration: none;
+            color: #262626;
+            background-color: #999;
+
+        }
+
+        @media (max-width: 767px) {
+            .dropdown-menu.multi-column {
+                min-width: 240px !important;
+                overflow-x: hidden;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#" id="Home">Bootstrap Structure </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Layout
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#" id="Overview">Overview</a>
+                        <a class="dropdown-item" href="#" id="Grid">Grid</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Content
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#" id="Typography">Typography</a>
+                        <a class="dropdown-item" href="#" id="Code">Code</a>
+                        <a class="dropdown-item" href="#" id="Image">Image</a>
+                        <a class="dropdown-item" href="#" id="Tables">Tables</a>
+                        <a class="dropdown-item" href="#" id="Figures">Figures</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Component
+                    </a>
+                    <ul class="dropdown-menu multi-column columns-3">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <ul class="multi-column-dropdown">
+                                    <a class="dropdown-item" href="#" id="Alert">Alert</a>
+                                    <a class="dropdown-item" href="#" id="Badge">Badge</a>
+                                    <a class="dropdown-item" href="#" id="Breadcrumb">Breadcrumb</a>
+                                    <a class="dropdown-item" href="#" id="Button">Button</a>
+                                    <a class="dropdown-item" href="#" id="ButtonGroup">Button Group</a>
+                                    <a class="dropdown-item" href="#" id="Card">Card</a>
+                                    <a class="dropdown-item" href="#" id="Carousel">Carousel</a>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3">
+                                <ul class="multi-column-dropdown">
+                                    <a class="dropdown-item" href="#" id="Breadcrumb">Breadcrumb</a>
+                                    <a class="dropdown-item" href="#" id="Collapse">Collapse</a>
+                                    <a class="dropdown-item" href="#" id="Dropdowns">Dropdowns</a>
+                                    <a class="dropdown-item" href="#" id="Forms">Forms</a>
+                                    <a class="dropdown-item" href="#" id="InputGroups">Input Groups</a>
+                                    <a class="dropdown-item" href="#" id="Jumbotron">Jumbotron</a>
+                                    <a class="dropdown-item" href="#" id="ListGroup">List Group</a>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3">
+                                <ul class="multi-column-dropdown">
+                                    <a class="dropdown-item" href="#" id="MediaObject">Media Object</a>
+                                    <a class="dropdown-item" href="#" id="Model">Model</a>
+                                    <a class="dropdown-item" href="#" id="Navs">Navs</a>
+                                    <a class="dropdown-item" href="#" id="Navbar">Navbar</a>
+                                    <a class="dropdown-item" href="#" id="Pagination">Pagination</a>
+                                    <a class="dropdown-item" href="#" id="Popovers">Popovers</a>
+                                    <a class="dropdown-item" href="#" id="Progress">Progress</a>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <ul class="multi-column-dropdown">
+                                    <a class="dropdown-item" href="#" id="Scrollspy">Scrollspy</a>
+                                    <a class="dropdown-item" href="#" id="Spinner">Spinner</a>
+                                    <a class="dropdown-item" href="#" id="Toasts">Toasts</a>
+                                    <a class="dropdown-item" href="#" id="Tooltips">Tooltips</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Utilities
+                    </a>
+                    <ul class="dropdown-menu multi-column columns-3">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <ul class="multi-column-dropdown">
+                                    <a class="dropdown-item" href="#" id="Borders">Borders</a>
+                                    <a class="dropdown-item" href="#" id="Clearfix">Clearfix</a>
+                                    <a class="dropdown-item" href="#" id="Close">Close Icon</a>
+                                    <a class="dropdown-item" href="#" id="Color">Colors</a>
+                                    <a class="dropdown-item" href="#" id="Display">Display</a>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3">
+                                <ul class="multi-column-dropdown">
+                                    <a class="dropdown-item" href="#" id="Embed">Embed</a>
+                                    <a class="dropdown-item" href="#" id="Flex">Flex</a>
+                                    <a class="dropdown-item" href="#" id="Float">Float</a>
+                                    <a class="dropdown-item" href="#" id="ImageReplacement">Image Replacement</a>
+                                    <a class="dropdown-item" href="#" id="Interactions">Interactions</a>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3">
+                                <ul class="multi-column-dropdown">
+                                    <a class="dropdown-item" href="#" id="Overflow">Overflow</a>
+                                    <a class="dropdown-item" href="#" id="Position">Position</a>
+                                    <a class="dropdown-item" href="#" id="ScreenReaders">Screen Readers</a>
+                                    <a class="dropdown-item" href="#" id="Shadow">Shadow</a>
+                                    <a class="dropdown-item" href="#" id="Sizing">Sizing</a>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3">
+                                <ul class="multi-column-dropdown">
+
+                                    <a class="dropdown-item" href="#" id="Spacing">Spacing</a>
+                                    <a class="dropdown-item" href="#" id="StretchedLink">Stretched Link</a>
+                                    <a class="dropdown-item" href="#" id="Text">Text</a>
+                                    <a class="dropdown-item" href="#" id="Vertical">Vertical align</a>
+                                    <a class="dropdown-item" href="#" id="Visibilty">Visibilty</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" id="BootstrapIcon">Bootstrapn Icon</a>
+                </li>
+                <li class="nav-item active" >
+                    <a class="nav-link" href="#" id="Template">Template</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="mr-3 ml-3 mt-3 " id="content">
+        <div class="text-center">
+            <p class="h1 ">Bootstrap</p>
+            <svg class="bi bi-bootstrap-fill " width="30em" height="30em" viewBox="0 0 16 16" fill="#0d6efd"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z" />
+            </svg>
+        </div>
+        <hr class="mb-5" />
+        <p class="h1 text-center">Bootstrap Theme</p>
+        <img src="assets/img/bootstrap-themes.png" class="w-100">
+        <hr class="mb-5" />
+        <p class="h1 text-center">Bootstrap Icon</p>
+        <img src="assets/img/bootstrap-icons.png" class="w-100">
+
+    </div>
+</body>
+<script>
+    // function callFunction(Selector) {
+    //     $(document).ready(function () {
+
+    //         $("#Selector").click(function () {
+    //             $.ajax({
+    //                 url: "Layout/Overview.html", success: function (result) {
+    //                     $("#content").html(result);
+    //                 }
+    //             });
+    //         });
+    //     });
+    // }
+    $(document).ready(function () {
+
+
+        // Layout
+
+        $("#Overview").click(function () {
+            $.ajax({
+                url: "Layout/Overview.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Grid").click(function () {
+            $.ajax({
+                url: "Layout/Grid.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+
+        // Content
+        $("#Typography").click(function () {
+            $.ajax({
+                url: "Content/Typography.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Code").click(function () {
+            $.ajax({
+                url: "Content/Code.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Image").click(function () {
+            $.ajax({
+                url: "Content/Image.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Tables").click(function () {
+            $.ajax({
+                url: "Content/Tables.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Figures").click(function () {
+            $.ajax({
+                url: "Content/Figures.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+
+
+        // Component
+        $("#Alert").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Badge").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Breadcrumb").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Button").click(function () {
+            $.ajax({
+                url: "Component/Button.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#ButtonGroup").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Card").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Carousel").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+        $("#Collapse").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+        $("#Dropdowns").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Forms").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#InputGroups").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Jumbotron").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#ListGroup").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#MediaObject").click(function () {
+            $.ajax({
+                url: "Component/MediaObject.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Model").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Navs").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Navbar").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Pagination").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Popovers").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Progress").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Scrollspy").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Spinner").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Toasts").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Tooltips").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+
+        // Utilities
+
+        $("#Borders").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+        
+        $("#Clearfix").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#CloseIcon").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Colors").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Display").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Embed").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Flex").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Float").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#ImageReplacement").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Interaction").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Overflow").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Position").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#ScreenReaders").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Shadow").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Sizing").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Spacing").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#StretchLink").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Text").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#VerticalAlign").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+        $("#Visibilty").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+
+        // Bootstrap Icon
+
+        $("#BootScrestrapIcon").click(function () {
+            $.ajax({
+                url: "Component/Alert.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+
+
+        // Template
+
+        $("#Template").click(function () {
+            $.ajax({
+                url: "Template/index.html", success: function (result) {
+                    $("#content").html(result);
+                }
+            });
+        });
+        
+    });
+</script>
+
+</html>
